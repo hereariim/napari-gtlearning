@@ -2,20 +2,22 @@ name: napari-gtlearning
 display_name: Gtlearning
 contributions:
   commands:
-    - id: napari-gtlearning.make_qwidget
-      python_name: napari_gtlearning._widget:ExampleQWidget
-      title: Make example QWidget
-    - id: napari-gtlearning.make_magic_widget
-      python_name: napari_gtlearning._widget:example_magic_widget
-      title: Make example magic widget
-    - id: napari-gtlearning.make_func_widget
-      python_name: napari_gtlearning._widget:example_function_widget
-      title: Make example function widget
+    - id: napari-gtlearning.process_function_load
+      python_name: napari_gtlearning._widget:process_function_load
+      title: Chargement des images
+    - id: napari-gtlearning.save_modification
+      python_name: napari_gtlearning._widget:save_modification
+      title: Save modification
+    - id: napari-gtlearning.save_as_zip
+      python_name: napari_gtlearning._widget:save_as_zip
+      title: Save zip
+
+      
+
   widgets:
-    - command: napari-gtlearning.make_qwidget
-      display_name: Example QWidget
-    - command: napari-gtlearning.make_magic_widget
-      display_name: Example Magic Widget
-    - command: napari-gtlearning.make_func_widget
-      autogenerate: true
-      display_name: Example Function Widget
+    - command: napari-gtlearning.process_function_load
+      display_name: Chargement des images
+    - command: napari-gtlearning.save_modification
+      display_name: Save modification
+    - command: napari-gtlearning.save_as_zip
+      display_name: Save zip
