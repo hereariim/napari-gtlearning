@@ -26,11 +26,11 @@ zip_dir = tempfile.TemporaryDirectory()
 def get_mosaic(img):
     A = []
     h,l,z = img.shape
-    #longueur
+    # longueur
     L1 = [ i for i in range(0,l-255,255)]+[l-255]
     L2 = [ 256+i for i in range(0,l,255) if 256+i < l]+[l]
 
-    #hauteur
+    # hauteur
     R1 = [ i for i in range(0,h-255,255)]+[h-255]
     R2 = [ 256+i for i in range(0,h,255) if 256+i < h]+[h]
 
